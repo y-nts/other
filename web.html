@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyCount - ແອັບນັບເງິນກີບ</title>
+    <!-- ໃຊ້ໄຟລ໌ Bootstrap ທີ່ມີຢູ່ໃນເຄື່ອງ (Local) ຄືກັນກັບ index.html -->
+    <link href="bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Noto Sans Lao -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            --secondary-color: #10b981;
+            --dark-navy: #1e293b;
+        }
+
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            color: #1e293b;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: white;
+            padding: 100px 0 80px 0;
+            border-radius: 0 0 50px 50px;
+            text-align: center;
+        }
+
+        .app-logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .download-btn {
+            background-color: #ffffff;
+            color: #4f46e5;
+            font-weight: 700;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* Features Section */
+        .feature-card {
+            border: none;
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+            background: #f8fafc;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #4f46e5;
+            margin-bottom: 20px;
+        }
+
+        /* Mockup Area */
+        .app-mockup {
+            max-width: 300px;
+            margin: -50px auto 50px auto;
+            background: white;
+            border: 8px solid var(--dark-navy);
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: #f1f5f9;
+            padding: 40px 0;
+            margin-top: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="app-logo">💵</div>
+            <h1 class="display-4 fw-bold mb-3">MoneyCount</h1>
+            <p class="lead mb-4">ແອັບນັບເງິນກີບທີ່ງ່າຍ, ໄວ ແລະ ຊ່ວຍໃຫ້ຊີວິດທ່ານສະດວກຂຶ້ນ</p>
+            <div class="d-flex justify-content-center">
+                    <a href="https://drive.usercontent.google.com/download?id=16kTwZiELrx91wHZ7Gg0BhaM_fCqP7S92&export=download&authuser=0&confirm=t&uuid=b9625c8e-f813-4448-bdb2-e3e953488d31&at=ALBwUglvS3qZP6bPY_RK0mn7nWMS%3A1779782183686" 
+   class="download-btn" 
+   download> <i class="bi bi-download"></i> ດາວໂຫຼດແອັບດຽວນີ້
+   ກົດທີ່ນີ້ເພື່ອດາວໂຫຼດແອັບຯ (APK)
+</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Preview Mockup -->
+    <div class="container">
+        <div class="app-mockup p-3">
+            <div class="bg-primary text-white p-2 mb-2 rounded text-center" style="font-size: 0.8rem;">ລະບົບນັບເງິນກີບ</div>
+            <div class="border rounded p-2 mb-2" style="font-size: 0.6rem;">
+                <div class="d-flex justify-content-between"><span>100,000</span><span>5 ໃບ</span><span>500,000</span></div>
+                <div class="d-flex justify-content-between"><span>50,000</span><span>2 ໃບ</span><span>100,000</span></div>
+            </div>
+            <div class="bg-dark text-white p-2 rounded text-center">
+                <div style="font-size: 0.5rem;">ຍອດລວມ</div>
+                <div class="fw-bold">600,000 ກີບ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section class="container mt-5">
+        <h2 class="text-center fw-bold mb-5">ເປັນຫຍັງຕ້ອງໃຊ້ MoneyCount?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="bi bi-calculator"></i></div>
+                    <h4>ນັບງ່າຍ ແລະ ແນ່ນອນ</h4>
+                    <p class="text-muted">ພຽງແຕ່ປ້ອນຈຳນວນໃບເງິນ, ລະບົບຈະຄິດໄລ່ຍອດລວມໃຫ້ທັນທີ ບໍ່ຕ້ອງກົດຈັກຄິດໄລ່ໃຫ້ເສຍເວລາ.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                    <h4>ອອກລາຍງານ PDF</h4>
+                    <p class="text-muted">ສາມາດສ້າງລາຍງານການນັບເງິນເປັນໄຟລ໌ PDF ທີ່ມີຄວາມເປັນມືອາຊີບ ເພື່ອສົ່ງຕໍ່ ຫຼື ເກັບໄວ້ເປັນຫຼັກຖານ.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon"><i class="bi bi-share"></i></div>
+                    <h4>ແຊຣ໌ງ່າຍໆ</h4>
+                    <p class="text-muted">ສົ່ງຂໍ້ມູນການນັບເງິນຜ່ານ WhatsApp ຫຼື ແອັບອື່ນໆ ໄດ້ທັງໃນຮູບແບບຮູບພາບ ແລະ ຂໍ້ຄວາມ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2024 MoneyCount App. ພັດທະນາເພື່ອຄວາມສະດວກຂອງຄົນລາວ.</p>
+            <div class="mt-2">
+                <small class="text-muted">ຮອງຮັບລະບົບ Android</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle ທີ່ມີຢູ່ໃນເຄື່ອງ -->
+    <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
